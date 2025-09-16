@@ -1,4 +1,4 @@
-//* CSS BY Scott Leishman */
+/* CSS BY Scott Leishman */
 
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
@@ -22,9 +22,9 @@ ul {
 
 /* ROOT VARIABLES */
 :root {
-  --primary-color: #1a2740;    /* navy background */
-  --secondary-color: #d6b36a;  /* golden beige */
-  --accent-color: #4c7031;     /* green highlight */
+  --primary-color: #1a2740;
+  --secondary-color: #d6b36a;
+  --accent-color: #4c7031;
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Open Sans', sans-serif;
   --text-dark: #333;
@@ -39,7 +39,6 @@ body {
   background-color: #fff;
 }
 
-/* Header */
 header {
   text-align: center;
   background-color: var(--primary-color);
@@ -62,7 +61,6 @@ header p {
   font-style: italic;
 }
 
-/* Navigation */
 nav ul {
   display: flex;
   justify-content: center;
@@ -82,7 +80,6 @@ nav li a:hover {
   color: var(--text-light);
 }
 
-/* Sections */
 section {
   padding: 2rem 1rem;
 }
@@ -127,71 +124,13 @@ h2 {
   text-align: center;
 }
 
-/* Footer */
-footer {
-  background-color: var(--primary-color);
-  color: var(--text-light);
+/* Gallery Button */
+.gallery-button {
   text-align: center;
-  padding: 2rem 1rem;
+  margin-top: 2rem;
 }
 
-footer a {
-  color: var(--secondary-color);
-  text-decoration: none;
-}
-
-/* MEDIA QUERY (medium: 600px) */
-@media (min-width: 600px) {
-  #offerings {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  #offerings article:nth-child(3) {
-    grid-column: span 2;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* MEDIA QUERY (large: 900px) */
-@media (min-width: 900px) {
-  header img {
-    max-width: 150px;
-  }
-
-  header h1 {
-    font-size: 2.5rem;
-  }
-
-  nav li a {
-    padding: 1rem 2rem;
-  }
-
-  #offerings {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  #offerings article:nth-child(3) {
-    grid-column: span 3;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-/* MEDIA QUERY (xl: 1200px) */
-@media (min-width: 1200px) {
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+.gallery-button a {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--text-lig
