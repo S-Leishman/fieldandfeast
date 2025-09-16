@@ -1,0 +1,146 @@
+/* CSS BY Scott Leishman */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap');
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --midnight-blue: #1F2A44;
+  --olive-green: #76885B;
+  --champagne-gold: #E5C185;
+  --linen: #F8F4EC;
+  --dark-charcoal: #2B2B2B;
+  --soft-white: #FAF9F6;
+
+  --font-heading: 'Playfair Display', serif;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark-charcoal);
+  background-color: var(--soft-white);
+  line-height: 1.6;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--linen);
+}
+
+header h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--midnight-blue);
+}
+
+header p {
+  font-size: 1.2rem;
+  color: var(--olive-green);
+  margin-bottom: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--midnight-blue);
+  font-weight: bold;
+}
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: var(--linen);
+  border-radius: 6px;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--midnight-blue);
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--olive-green);
+}
+
+figure {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+figure figcaption {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: var(--dark-charcoal);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--midnight-blue);
+  color: var(--soft-white);
+}
+
+footer a {
+  color: var(--champagne-gold);
+  text-decoration: none;
+}
+
+/* MEDIA QUERY (medium) */
+@media (min-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  nav ul {
+    gap: 30px;
+  }
+}
+
+/* MEDIA QUERY (large) */
+@media (min-width: 900px) {
+  section {
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  figure {
+    max-width: 600px;
+  }
+}
+
+/* MEDIA QUERY (xl) */
+@media (min-width: 1200px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
